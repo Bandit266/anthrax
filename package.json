@@ -1,6 +1,9 @@
 {
-	"name": "example-create-react-app-express-entry",
+	"name": "example-entry",
 	"version": "1.0.0",
+	"engines": {
+		"node": "12.16.1"
+	  },
 	"scripts": {
 		"client": "cd ./client && yarn start",
 		"socketstart": "yarn wsservers && yarn apigatestart",
