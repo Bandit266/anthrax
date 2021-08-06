@@ -35,15 +35,15 @@
 
 
 // Bridge()
-const { ChannelAccess } = require('./APIGateway/index.gate.api');
+// const { ChannelAccess } = require('./APIGateway/index.gate.api');
 
 
-// const Bridge = () => {
-	ChannelAccess()
+// // const Bridge = () => {
+// 	ChannelAccess()
 // }
 
 
-
+console.log("ended up in root")
 
 
 
