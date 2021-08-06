@@ -22,7 +22,6 @@
 		"dev2": "start yarn server && yarn client",
 		"dev": "start yarn server && start yarn wsserver && yarn client",
 		"start": "yarn socketstart",
-		"heroku-postbuild": "cd client && npm install && npm install --no-shrinkwrap && npm run build",
 		"kill": "--kill-others",
 		"wipe": "rm -r package-lock.json node_modules"
 	}
