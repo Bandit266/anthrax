@@ -1,0 +1,26 @@
+{
+	"name": "example-create-react-app-express-entry",
+	"version": "1.0.0",
+	"scripts": {
+		"client": "cd ./client && yarn start",
+		"socketstart": "yarn wsservers && yarn apigatestart",
+		"wsservers": "start yarn wsserversm && start yarn wsserversc",
+		"wsserversm": "cd server && cd APIGateway && cd websocket && node index.ws.server.master.js",
+		"wsserversc": "cd server && cd  APIGateway && cd websocket && node index.ws.server.client.js",
+		"wsserverse": "cd APIGateway && cd websocket && node index.ws.server.error.js",
+		"wsserversl": "cd APIGateway && cd websocket && node index.ws.server.log.js",
+		"apiserver": "cd server && cd APIGateway && cd ExpressApi && node index.api.js",
+		"wsclient": "cd APIGateway && cd websocket && node index.ws.client.js",
+		"apigatestart": "start yarn apiserver && start yarn apigate2",
+		"apigate": "cd server && cd APIGateway && node index.gate.api.js",
+		"apigate2": "cd server && node index.js",
+		"server": "nodemon index.js",
+		"devsocketstart": "start yarn wsserver && yarn devwsclientstart",
+		"dev2": "start yarn server && yarn client",
+		"dev": "start yarn server && start yarn wsserver && yarn client",
+		"start": "yarn socketstart",
+		"heroku-postbuild": "cd client && npm install && npm install --no-shrinkwrap && npm run build",
+		"kill": "--kill-others",
+		"wipe": "rm -r package-lock.json node_modules"
+	}
+}
