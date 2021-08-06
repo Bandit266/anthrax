@@ -5,13 +5,11 @@
 		"node": "12.16.1"
 	  },
 	"scripts": {
-		"client": "cd ./client && yarn start",
+		"client": "cd client && yarn start",
 		"socketstart": "yarn wsservers && yarn apigatestart && yarn client",
 		"wsservers": "start yarn wsserversm && start yarn wsserversc",
 		"wsserversm": "cd server && cd APIGateway && cd websocket && node index.ws.server.master.js",
 		"wsserversc": "cd server && cd  APIGateway && cd websocket && node index.ws.server.client.js",
-		"wsserverse": "cd APIGateway && cd websocket && node index.ws.server.error.js",
-		"wsserversl": "cd APIGateway && cd websocket && node index.ws.server.log.js",
 		"apiserver": "cd server && cd APIGateway && cd ExpressApi && node index.api.js",
 		"wsclient": "cd APIGateway && cd websocket && node index.ws.client.js",
 		"apigatestart": "start yarn apiserver && start yarn apigate2",
@@ -22,7 +20,6 @@
 		"dev2": "start yarn server && yarn client",
 		"dev": "start yarn server && start yarn wsserver && yarn client",
 		"start": "yarn socketstart",
-		"kill": "--kill-others",
-		"wipe": "rm -r package-lock.json node_modules"
+		"heroku-postbuild": "cd client && yarn && yarn build"
 	}
 }
