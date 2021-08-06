@@ -5,7 +5,7 @@
 [![npm package][npm-coreui-react-badge]][npm-coreui-react]
 [![NPM downloads][npm-coreui-react-download]][npm-coreui-react]  
 [![npm next][npm-next]][npm]
-	"heroku-postbuild": "npm install && npm install --no-shrinkwrap && npm run build"
+
 [npm-coreui]: https://www.npmjs.com/package/@coreui/coreui
 [npm-coreui-badge]: https://img.shields.io/npm/v/@coreui/coreui.png?style=flat-square
 [npm-coreui-download]: https://img.shields.io/npm/dm/@coreui/coreui.svg?style=flat-square

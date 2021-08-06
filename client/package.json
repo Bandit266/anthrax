@@ -62,7 +62,8 @@
     "test:debug": "react-scripts --inspect-brk test --runInBand",
     "eject": "react-scripts eject",
     "changelog": "auto-changelog --starting-version 3.0.0 --commit-limit false --hide-credit",
-    "watch": "npm-watch"
+    "watch": "npm-watch",
+	"heroku-postbuild": "npm install && npm install --no-shrinkwrap && npm run build"
   },
   "watch": {
     "build": "/build"
