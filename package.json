@@ -6,7 +6,7 @@
 	  },
 	"scripts": {
 		"client": "cd ./client && yarn start",
-		"socketstart": "yarn wsservers && yarn apigatestart",
+		"socketstart": "yarn wsservers && yarn apigatestart && yarn client",
 		"wsservers": "start yarn wsserversm && start yarn wsserversc",
 		"wsserversm": "cd server && cd APIGateway && cd websocket && node index.ws.server.master.js",
 		"wsserversc": "cd server && cd  APIGateway && cd websocket && node index.ws.server.client.js",
