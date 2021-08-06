@@ -19,9 +19,9 @@
 		"devsocketstart": "start yarn wsserver && yarn devwsclientstart",
 		"dev2": "start yarn server && yarn client",
 		"dev": "start yarn server && start yarn wsserver && yarn client",
-		"start4": "yarn socketstart2",
-		"start": "yarn client",
-		"socketstart2": "yarn wsservers && yarn apigatestart2 && yarn client",
+		"start": "yarn socketstart2",
+		"start4": "yarn client",
+		"socketstart2": "yarn wsservers && yarn apigatestart2",
 		"apigatestart2": "start yarn apigate2",
 		"start3": "yarn socketstart",
 		"start2": "yarn apigate2 && client"
